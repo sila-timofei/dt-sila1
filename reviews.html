@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отзывы</title>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/uikit.css" />
+    <link rel="stylesheet" href="css/reviews.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body class="document">
+    <header class="header">
+        <div class="container header__row">
+            <div class="header__btn-menu1"></div>
+            <a href="index.html" class="header__logo logo"></a>
+
+            <nav class="header__nav">
+                <a href="index.html" class="header__nav-link">главная</a>
+                <a href="#" class="header__nav-link off-link header__nav-link_active">отзывы</a>
+                <a href="contact.html" class="header__nav-link">контакты</a>
+            </nav>
+
+            <div class="header__btn-menu">
+                <div class="header__btn-line header__btn-line1"></div>
+                <div class="header__btn-line header__btn-line2"></div>
+                <div class="header__btn-line header__btn-line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mob-menu">
+        <nav class="mob-menu__nav">
+            <a href="index.html" class="mob-menu__link mob-menu__margin1">главная</a>
+            <a href="#" class="mob-menu__link mob-menu__margin2 off-link mob-memu_link-active">отзывы</a>
+            <a href="contact.html" class="mob-menu__link mob-menu__margin3">контакты</a>
+        </nav>
+    </div>
+
+    <div class="modal">
+        <div class="modal__body">
+            <div class="modal__btn-close"></div>
+
+            <div class="modal__title">Здесь вы можете оставить
+                ваш отзыв</div>
+            
+            <form enctype="multipart/form-data" method="post" class="modal__form">
+                <div class="modal__wrapp-field">
+                    <input class="modal__form-field" type="text" maxlength="512" name="author" placeholder="Имя">
+                </div>
+                <div class="modal__wrapp-field">
+                    <input class="modal__form-field" type="text" maxlength="512" name="author_description" placeholder="Кто вы? Заказчик, коллега и т.д.">
+                </div>
+                <div class="modal__wrapp-field">
+                    <textarea class="modal__form-field modal__wrap-field-big" type="text" name="reviews_text" placeholder="Ваш текст"></textarea>
+                </div>
+
+                <button class="btn modal__form-send off-link">отправить</button>
+            </form>
+
+            <p class="modal__text">Нажимая на кнопку, вы даете согласие на обработку персональных
+                данных и соглашаетесь c <a href="#" target="_blank">политикой конфиденциальности</a></p>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="reviews container">
+            <h2 class="main-title">Отзывы...</h2>
+
+            <div class="reviews__container">
+                <div class="reviews__card">
+                    <div class="reviews__card-head">
+                        <div class="reviews__ava">
+                            <span>а</span>
+                        </div>
+
+                        <div>
+                            <div class="reviews__name">Алина</div>
+
+                            <p class="reviews__position">
+                                Заказчик
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="reviews__text">
+                        Хотим выразить огромную благодарность нашему ведущему за невероятную атмосферу на нашей свадьбе! 🤍 Всё было продумано до мелочей, учтены наши пожелания и характер гостей. Праздник прошёл легко, весело и очень душевно. Было много смеха, трогательных моментов и при этом — никакой неловкости или банальных конкурсов. Ведущий тонко чувствовал настроение зала, умело импровизировал и держал внимание гостей на протяжении всего вечера. Отдельное спасибо за тактичность, харизму и умение объединить всех. Многие гости потом говорили, что это была одна из самых тёплых и классных свадеб, на которых они были. Мы счастливы, что именно вы были частью нашего дня. Рекомендуем от всей души! ✨
+                    </p>
+                </div>
+
+                <div class="reviews__card">
+                    <div class="reviews__card-head">
+                        <div class="reviews__ava">
+                            <span>е</span>
+                        </div>
+
+                        <div>
+                            <div class="reviews__name">Екатерина</div>
+
+                            <p class="reviews__position">
+                                Заказчик
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="reviews__text">
+                        Мы даже не заметили, как пролетел вечер. Данил с самого начала создал ту атмосферу, где всем было комфортно — и родителям, и друзьям. Ни одной пошлой шутки, всё по-умному и в тему. Было ощущение, будто он чувствует каждую эмоцию гостей и знает, когда добавить юмор, а когда — дать моменту прозвучать. Спасибо, что сделали наш день лёгким, настоящим и тёплым ❤️
+                    </p>
+                </div>
+
+                <div class="reviews__card">
+                    <div class="reviews__card-head">
+                        <div class="reviews__ava">
+                            <span>м</span>
+                        </div>
+                            
+                        <div>
+                            <div class="reviews__name">Мария</div>
+
+                            <p class="reviews__position">
+                                Заказчик
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="reviews__text">
+                        Мы до последнего переживали за выбор ведущего — Данил превзошёл наши ожидания так, что мы не заметили, как пролетел вечер! Данил умудрился подстроиться под все поколения молодёжь и родителей. Смех, трогательные паузы, неожиданные моменты всё идеально в тему. Это было весело и очень трогательно. Данил, спасибо тебе за такой великолепный вечер 🫶 
+                    </p>
+                </div>
+
+                <div class="reviews__card">
+                    <div class="reviews__card-head">
+                        <div class="reviews__ava">
+                            <span>е</span>
+                        </div>
+
+                        <div>
+                            <div class="reviews__name">Екатерина</div>
+
+                            <p class="reviews__position">
+                                Заказчик
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="reviews__text">
+                        С первых минут Данил задал темп: зал взорвался смехом и аплодисментами✨🫶🏼 Никаких банальных конкурсов, только свежие идеи и фирменный юмор😉 Даже самые скромные гости не удержались и участвовали в программе🔥😃 Энергия вечера — просто космос, спасибо за праздник!❤️‍🔥
+                    </p>
+                </div>
+                
+                <div class="reviews__card">
+                    <div class="reviews__card-head">
+                        <div class="reviews__ava">
+                            <span>а</span>
+                        </div>
+
+                        <div>
+                            <div class="reviews__name">Аннет</div>
+
+                            <p class="reviews__position">
+                                Заказчик
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="reviews__text">
+                        Добрый день! Весной с женихом искали ведущего с диджеем себе на свадьбу, которая планировалась в конце августа. Искали много где, даже выкладывали объявление на профи.ру и тд. Но чисто случайно загуглив, нашла профиль Данила и решила ему написать в вотсапе. Далее мы уже списались, созвонились, встретились в Москве, обсудили сценарий. Данил нам понравился сразу, очень приятный человек. У нас не было сомнений вообще. Мы выбрали его нашим ведущим и не пожалели 🙏😍 23.08.2025 прошла наша свадьба. Все было очень круто, всем гостям все понравилось 👍 Хочется также отметить, что у Данила отличное чувство стиля и вкуса, поэтому мы были полностью спокойны за качество свадьбы. От Данила исходит вайб старого знакомого, которого знаешь 1000 лет, очень классный ведущий 🥰 Многие гости тоже отметили, что у них было ощущение, как будто они уже давно знают Данила. После свадьбы еще долго отходили, вспоминали и кайфовали от события. Если свадьба, то только такая и с таким ведущим 💕
+                    </p>
+                </div>
+                
+                
+                <div class="reviews__card">
+                    <div class="reviews__card-head">
+                        <div class="reviews__ava">
+                            <span>л</span>
+                        </div>
+
+                        <div>
+                            <div class="reviews__name">Лиза</div>
+
+                            <p class="reviews__position">
+                                Заказчик
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="reviews__text">
+                        Хотим выразить огромную благодарность Данилу с говорящей фамилией Сила за его потрясающую работу на нашей свадьбе! Расположил к себе с самой первой нашей встречи. Данил мастерски вел мероприятие, организовывал гостей и задавал нужное настроение. Умело и круто выдерживал тайминг. Подошел индивидуально к каждому гостю. Просто потрясающе! Мы получили много положительных отзывов от гостей о том, как было весело и интересно. Более того, учел все наши пожелания и идеи. Вечер стал действительно уникальным и незабываемым. Помог нам организовать звук, свет и тяжелый дым. Мы очень благодарны тебе за профессионализм и креативный подход. Очень рекомендуем Данила Силу всем, кто хочет, чтобы их свадьба стала настоящим праздником! Спасибо еще раз! Ты лучший!😉
+                    </p>
+                </div>
+                
+                <div class="reviews__card">
+                    <div class="reviews__card-head">
+                        <div class="reviews__ava">
+                            <span>а</span>
+                        </div>
+
+                        <div>
+                            <div class="reviews__name">Анастасия</div>
+
+                            <p class="reviews__position">
+                                Заказчик
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="reviews__text">
+                        Хочу выразить огромную благодарность Даниле за проведение нашей свадьбы 22.09.2024 ❤ Подготовка и обсуждение деталей были максимально комфортные, Данил принимал все замечания и помогал определиться с программой, также пошёл на встречу по таймингу, что было очень важно для нас. Все гости отметили насколько ведущий был приятный, не было странных или пошлых шуток, все было очень вежливо, без перебора, но при этом весело и по-доброму. Отдельная благодарность диджею Тимофею, музыка и настроение были на высоте))
+                    </p>
+                </div>
+                
+                <div class="reviews__card">
+                    <div class="reviews__card-head">
+                        <div class="reviews__ava">
+                            <span>е</span>
+                        </div>
+
+                        <div>
+                            <div class="reviews__name">Елизавета</div>
+
+                            <p class="reviews__position">
+                                Заказчик
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="reviews__text">
+                        Мы хотим выразить огромную благодарность Даниле и диджею за столь оригинальное проведение нашей свадьбы, были задействованы все наши гости от мала до велика. Хотим отметить высокий профессиональный уровень наших ведущих. Большое спасибо за тот праздник, который мы запомним на всю жизнь. С большим уважением — Максим и Елизавета. (Хилтон Ленинградская 12.10.2024 г.)
+                    </p>
+                </div>
+                
+                <div class="reviews__card">
+                    <div class="reviews__card-head">
+                        <div class="reviews__ava">
+                            <span>р</span>
+                        </div>
+
+                        <div>
+                            <div class="reviews__name">Роман</div>
+
+                            <p class="reviews__position">
+                                Заказчик
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="reviews__text">
+                        Про Данила мы узнали через наших друзей. Созвонились, всё обсудили и поняли — это наш ведущий✨ Он всегда внимательно выслушивал пожелания и подстроился под нашу индивидуальную концепцию. Мы точно для себя решили, что именно Данил должен быть ведущим на нашей свадьбе. Мы нисколько не ошиблись в выборе! Благодаря Данилу мы и наши гости провели незабываемый и душевный вечер. Уровень подготовк к нашему мероприятию превзошел все наши ожидания, было очень круто, весело, все были настолько вовлечены в эту атмосферу праздника, что будем долго и тепло вспоминать наш вечер, еще раз спасибо Данил❤️❤️
+                    </p>
+                </div>
+                
+                <div class="reviews__card">
+                    <div class="reviews__card-head">
+                        <div class="reviews__ava">
+                            <span>н</span>
+                        </div>
+
+                        <div>
+                            <div class="reviews__name">Нигина</div>
+
+                            <p class="reviews__position">
+                                Заказчик
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="reviews__text">
+                        У нас была была свадьба 23.08.2024. Довольно долго искали ведущего, потому что всё было не то. Найдя Даню, я и муж были очень рады, потому что он понимал нас с полуслова. На свадьбе все было шикарно. Интерактивы были интересными и в целом общение ведущего с нами и нашими гостями складывалось просто восхитительно. Вместе с Данилом работал также диджей Тимофей. Это было здорово. Ведь и Данил, и Тимофей невероятные профессионалы своего дела. Свадьба прошла просто великолепно. Очень благодарна этому дуэту (ведущий+диджей) за их работу и хорошо проведённое время. Очень рекомендую, вы действительно не пожалеете. Это было крышесносно. Я и муж просто в восторге. ❣️🥰
+                    </p>
+                </div>
+                
+                <div class="reviews__card">
+                    <div class="reviews__card-head">
+                        <div class="reviews__ava">
+                            <span>л</span>
+                        </div>
+
+                        <div>
+                            <div class="reviews__name">Лиза</div>
+
+                            <p class="reviews__position">
+                                Заказчик
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="reviews__text">
+                        Хотим поблагодарить Силу Данила за наш свадебный вечер в качестве ведущего. За профессионализм, умение тонко чувствовать атмосферу праздника и ловко шутить с гостями — сделал наш вечер незабываемым. Данил продемонстрировал прекрасное понимание того, как создать атмосферу веселья и тепла. Было очень много индивидуальности, что позволило чувствовать себя комфортно в присутствии всех наших близких. Данил Сила лучший ведущий ❤️
+                    </p>
+                </div>
+                
+                <div class="reviews__card">
+                    <div class="reviews__card-head">
+                        <div class="reviews__ava">
+                            <span>а</span>
+                        </div>
+
+                        <div>
+                            <div class="reviews__name">Анастасия</div>
+
+                            <p class="reviews__position">
+                                Заказчик
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="reviews__text">
+                        2 июля 2023 года мы с Пашей стали мужем и женой. В подготовке к нашей свадьбе немаловажное участие принимал мой папа. Он понял, что без профессионального ведущего и правильной организации музыкальной программы не обойтись. Мой папа связывался с несколькими ведущими свадьбы, и после всесторонней оценки был выбран именно Данил. Что еще определило этот выбор, так это то, что Данил мог быть на свадьбе и ведущим и DJ. И мы не разочаровались в своем выборе. Всё было профессионально, начиная от заключения договора и до того оборудования, которое привез с собой Данил. Но самое главное — это то, как прошло само событие, какая атмосфера была в зале ресторана. Данил очень умело вел свадебное торжество, сопровождая его отличной музыкой, которая пришлась по душе практически всем. Предложенные Данилом конкурсы не оставили никого равнодушными, даже бабушка моего уже мужа участвовала в танцевальном конкурсе. Завершая свой отзыв, хочу от нашей юной семьи, наших родителей и гостей поблагодарить Данила за замечательный вечер, который он организовал для нас.
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+        <!-- /.reviews container -->
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__row">
+            <div class="footer__copyter">© Ведущий Данил Сила 2013</div>
+
+            <div class="social">
+                <a href="https://www.instagram.com/dt_sila/?utm_medium=copy_link" class="social__link" target="_blank">
+                    <img src="img/instagram.svg" class="social__icon" alt="instagram">
+                </a>
+                <a href="https://wa.me/79151111215" class="social__link" target="_blank">
+                    <img src="img/whatsApp.svg" class="social__icon" alt="whatsapp">
+                </a>
+                <a href="https://t.me/SilaDanil" class="social__link social__link-telegram" target="_blank">
+                    <img src="img/telegram.svg" class="social__icon" alt="telegram">
+                </a>
+            </div>
+
+            <div class="footer__created">
+                Сайт разработан <a href="https://sila-timofei.github.io/dev/" target="_blank">Dev</a>
+            </div>
+
+            <div class="social1">
+                <a href="https://www.instagram.com/dt_sila/?utm_medium=copy_link" class="social__link" target="_blank">
+                    <img src="img/instagram.svg" class="social__icon" alt="instagram">
+                </a>
+                <a href="https://wa.me/79151111215" class="social__link" target="_blank">
+                    <img src="img/whatsApp.svg" class="social__icon" alt="whatsapp">
+                </a>
+                <a href="https://t.me/SilaDanil" class="social__link social__link-telegram" target="_blank">
+                    <img src="img/telegram.svg" class="social__icon" alt="telegram">
+                </a>
+            </div>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            //modal: close/open
+            const modal = document.querySelector('.modal'),
+                btnModal = document.querySelector('.reviews__btn-add'),
+                btnCloseModal = document.querySelector('.modal__btn-close'),
+                modalBody = modal.querySelector('.modal__body'),
+                doc = document.querySelector('.document');
+
+            btnModal.addEventListener('click', () => {
+                modal.style.cssText = 'opacity: 1; pointer-events: all;';
+                doc.style.overflow = 'hidden';
+                modalBody.style.cssText = 'margin-top: 100px;';
+            });
+
+            btnCloseModal.addEventListener('click', () => {
+                modal.style.cssText = '';
+                doc.style.overflow = '';
+                modalBody.style.cssText = '';
+
+                clearActiveInput(wrapInput);
+            });
+
+            function clearActiveInput(i) {
+                i.forEach(item => {
+                    item.classList.remove('modal__field-border');
+                });
+            }
+
+            let input = document.querySelectorAll('.modal__form-field'),
+                wrapInput = document.querySelectorAll('.modal__wrapp-field');
+
+            input.forEach(i => {
+                i.addEventListener('click', function (e) {
+                    let i = e.target;
+
+                    clearActiveInput(wrapInput);
+
+                    i.parentElement.classList.add('modal__field-border');
+                });
+            });
+
+
+            let btnSend = document.querySelector('.modal__form-send');
+
+            btnSend.addEventListener('click', () => {
+                input.forEach(i => {
+                    i.value = '';
+                });
+
+                clearActiveInput(wrapInput);
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
