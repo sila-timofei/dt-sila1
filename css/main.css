@@ -88,39 +88,39 @@
 }
 
 .gallery__photo1 {
-    background-image: url('../img/gallery//preview/1.jpg'); 
+    background-image: url('../img/gallery//preview/1.jpg?v=1'); 
 }
 
 .gallery__photo2 {
-    background-image: url('../img/gallery/2.jpg');   
+    background-image: url('../img/gallery/2.jpg?v=1');   
 }
 
 .gallery__photo3 {
-    background-image: url('../img/gallery//preview/3.jpg');
+    background-image: url('../img/gallery//preview/3.jpg?v=1');
 }
 
 .gallery__photo4 {
-    background-image: url('../img/gallery/4.jpg');
+    background-image: url('../img/gallery/4.jpg?v=1');
 }
 
 .gallery__photo5 {
-    background-image: url('../img/gallery/5.jpg');
+    background-image: url('../img/gallery/5.jpg?v=1');
 }
 
 .gallery__photo6 {
-    background-image: url('../img/gallery//preview/6.jpg'); 
+    background-image: url('../img/gallery//preview/6.jpg?v=1'); 
 }
 
 .gallery__photo7 {
-    background-image: url('../img/gallery//preview/7.jpg'); 
+    background-image: url('../img/gallery//preview/7.jpg?v=1'); 
 }
 
 .gallery__photo8 {
-    background-image: url('../img/gallery/8.jpg');
+    background-image: url('../img/gallery/8.jpg?v=1');
 }
 
 .gallery__photo9 {
-    background-image: url('../img/gallery//preview/9.jpg'); 
+    background-image: url('../img/gallery//preview/9.jpg?v=1'); 
 }
 
 
