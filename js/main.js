@@ -1,11 +1,23 @@
-window.addEventListener('DOMContentLoaded', () => {
-    const offLink = document.querySelectorAll('.off-link');
 
-    offLink.forEach(i => {
-        i.addEventListener('click', e => {
-            e.preventDefault();
+
+
+window.addEventListener('DOMContentLoaded', () => {
+
+    const reveals = document.querySelectorAll('.reveal');
+
+    function revealOnScroll() {
+        reveals.forEach(el => {
+            const top = el.getBoundingClientRect().top;
+
+            if (top < window.innerHeight * 0.9) {
+                el.classList.add('active');
+            }
         });
-    });
+    }
+
+window.addEventListener('scroll', revealOnScroll);
+
+revealOnScroll();
 
     const btnMenu = document.querySelector('.header__btn-menu'),
           btnMenuLine = btnMenu.querySelectorAll('.header__btn-line'),
