@@ -11,8 +11,12 @@
     <link rel="stylesheet" href="css/general.css?v=2.0" />
 </head>
 <body class="document">
+
+    <div class="loader">
+        <div class="loader__logo">DANIL SILA</div>
+    </div>
     <header class="header">
-        <div class="container header__row">
+        <div class="container header__row reveal">
             <div class="header__btn-menu1"></div>
 
             <a href="index.html" class="header__logo logo off-link"></a>
@@ -39,8 +43,6 @@
         </nav>
     </div>
 
-
-
     <div class="modal">
 
         <img class="lightbox__image" src="" alt="photo" loading="lazy"/>
@@ -53,7 +55,7 @@
 
     <main class="main">
         <div class="container">
-            <div class="gallery">
+            <div class="gallery reveal">
                 <div class="gallery__wrap-photo">
                     <div class="gallery__photo gallery__photo1" data-src="img/gallery/1.jpg?v=1.0"></div>
                 </div>
@@ -92,26 +94,26 @@
             </div>
     
             <div class="promo-video">
-                <h2 class="main-title">Видео.</h2>
-                <p class="promo-video__text">Ниже — короткое видео, чтобы вы могли составить первое впечатление о моей подаче и стиле ведения.</p>
+                <h2 class="main-title reveal">Видео.</h2>
+                <p class="promo-video__text reveal">Ниже — короткое видео, чтобы вы могли составить первое впечатление о моей подаче и стиле ведения.</p>
     
-                <div class="promo-video__wrap">
+                <div class="promo-video__wrap reveal">
                     <iframe width="720" height="405" src="https://rutube.ru/play/embed/107d8bcad261c80fbf9b41323e193dfb/?skinColor=ffffff" style="border: none;" allow="clipboard-write; autoplay" allowFullScreen></iframe>
                 </div>
             </div>
 
-            <h1 class="main-title about-title">Ведущий Данил Сила — современный, 
+            <h1 class="main-title about-title reveal">Ведущий Данил Сила — современный, 
             живой и по-настоящему ваш праздник.</h1>
-            <p class="text-about"><span>Лёгкая атмосфера, уместный юмор, чувство меры и вечер,
+            <p class="text-about reveal"><span>Лёгкая атмосфера, уместный юмор, чувство меры и вечер,
             в котором комфортно и вам, и вашим гостям.</span>
 
                 Для меня важно, чтобы праздник был не просто красивым, а собранным именно под вас — без неловкости, перегруза и шаблонных решений. С индивидуальным сценарием, 
                 живой атмосферой и подачей, в которой легко быть собой.
             </p>
 
-            <div class="questions__close">Часто задаваемые Вопросы / Ответы</div>
+            <div class="questions__close reveal">Часто задаваемые Вопросы / Ответы</div>
 
-            <div class="questions">
+            <div class="questions reveal">
                 <div class="questions__body">
                     <div class="questions__title">
                         <span>Какой у вас опыт в event-сфере?</span>
@@ -362,6 +364,7 @@
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         lightboxImg.src = images[currentIndex];
         }
+        
 
         // события
         btnClose.addEventListener('click', closeLightbox);
