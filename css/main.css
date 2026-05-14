@@ -88,39 +88,39 @@
 }
 
 .gallery__photo1 {
-    background-image: url('../img/gallery//preview/1.jpg?v=1'); 
+    background-image: url('../img/gallery/preview/1.png'); 
 }
 
 .gallery__photo2 {
-    background-image: url('../img/gallery/2.jpg?v=1');   
+    background-image: url('../img/gallery/preview/2.png');   
 }
 
 .gallery__photo3 {
-    background-image: url('../img/gallery//preview/3.jpg?v=1');
+    background-image: url('../img/gallery/preview/3.png');
 }
 
 .gallery__photo4 {
-    background-image: url('../img/gallery/4.jpg?v=1');
+    background-image: url('../img/gallery/preview/4.png');
 }
 
 .gallery__photo5 {
-    background-image: url('../img/gallery/5.jpg?v=1');
+    background-image: url('../img/gallery/preview/5.png');
 }
 
 .gallery__photo6 {
-    background-image: url('../img/gallery//preview/6.jpg?v=1'); 
+    background-image: url('../img/gallery/preview/6.png'); 
 }
 
 .gallery__photo7 {
-    background-image: url('../img/gallery//preview/7.jpg?v=1'); 
+    background-image: url('../img/gallery/preview/7.png'); 
 }
 
 .gallery__photo8 {
-    background-image: url('../img/gallery/8.jpg?v=1');
+    background-image: url('../img/gallery/preview/8.png');
 }
 
 .gallery__photo9 {
-    background-image: url('../img/gallery//preview/9.jpg?v=1'); 
+    background-image: url('../img/gallery/preview/9.png'); 
 }
 
 
