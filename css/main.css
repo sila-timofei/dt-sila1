@@ -1,10 +1,16 @@
 
 .lightbox__image {
-  margin-top: 100px;
-  max-width: 90%;
-  max-height: 90%;
   object-fit: fill;
-  transition: 0.8s;
+  opacity:0;
+  transition:
+  opacity .35s ease,
+  transform .35s ease;
+  max-width:90%;
+  max-height:90vh;
+  transform:scale(.96);
+  will-change:
+  transform,
+  opacity;
 }
 
 .next-img {
@@ -53,6 +59,14 @@
   right: 0;
 }
 
+.modal.active .lightbox__image{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
 
 .gallery {
     display: flex;
@@ -72,56 +86,16 @@
 }
 
 .gallery__photo {
-    padding-top: 100%;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
     transition: 0.4s;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .gallery__photo:hover {
     transform: scale(1.1);
 }
 
-.gallery__photo1 {
-    background-image: url('../img/gallery/preview/1.webp'); 
-}
 
-.gallery__photo2 {
-    background-image: url('../img/gallery/preview/2.webp');   
-}
-
-.gallery__photo3 {
-    background-image: url('../img/gallery/preview/3.webp');
-}
-
-.gallery__photo4 {
-    background-image: url('../img/gallery/preview/4.webp');
-}
-
-.gallery__photo5 {
-    background-image: url('../img/gallery/preview/5.webp');
-}
-
-.gallery__photo6 {
-    background-image: url('../img/gallery/preview/6.webp'); 
-}
-
-.gallery__photo7 {
-    background-image: url('../img/gallery/preview/7.webp'); 
-}
-
-.gallery__photo8 {
-    background-image: url('../img/gallery/preview/8.webp');
-}
-
-.gallery__photo9 {
-    background-image: url('../img/gallery/preview/9.webp'); 
-}
 
 
 .promo-video {
@@ -370,11 +344,8 @@
     
     
     .lightbox__image {
-        margin-top: 100px;
-        max-width: 90%;
-        max-height: 90%;
-        object-fit: fill;
-        transition: 0.8s;
+        max-width:100%;
+        max-height:90vh;
     }
 
     .lightbox__arrow {
@@ -414,39 +385,6 @@
 
     .lightbox__arrow_right {
         right: 0;
-    }
-
-
-    .gallery {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-bottom: -20px;
-    }
-
-    .gallery__wrap-photo {
-        /*width: 32.3333333%;*/
-        position: relative;
-        width: 376px;
-        /*height: 376px;*/
-        overflow: hidden;
-        margin-bottom: 20px;
-        cursor: pointer;
-    }
-
-    .gallery__photo {
-        padding-top: 100%;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        transition: 0.4s;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .gallery__photo:hover {
-        transform: scale(1.1);
     }
 
 
