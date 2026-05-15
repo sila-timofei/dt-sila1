@@ -7,7 +7,7 @@
     <title>Данил Сила - Ведущий</title>
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="css/uikit.css?v=2.0" />
-    <link rel="stylesheet" href="css/main.css?v=02" />
+    <link rel="stylesheet" href="css/main.css?v=428" />
     <link rel="stylesheet" href="css/general.css?v=2.0" />
 </head>
 <body class="document">
@@ -55,41 +55,41 @@
 
     <main class="main">
         <div class="container">
-            <div class="gallery reveal">
-                <div class="gallery__wrap-photo">
-                    <div class="gallery__photo gallery__photo1" data-src="img/gallery/1.webp"></div>
+            <div class="gallery">
+                <div class="gallery__wrap-photo reveal">
+                    <img src="img/gallery/preview/1.webp" class="gallery__photo gallery__photo1" data-src="img/gallery/1.webp" loading="lazy" decoding="async">
                 </div>
     
                 <div class="gallery__wrap-photo">
-                    <div class="gallery__photo gallery__photo2" data-src="img/gallery/2.webp"></div>
+                    <img src="img/gallery/preview/2.webp" class="gallery__photo gallery__photo2 reveal" data-src="img/gallery/2.webp" loading="lazy" decoding="async">
                 </div>
     
                 <div class="gallery__wrap-photo">
-                    <div class="gallery__photo gallery__photo3" data-src="img/gallery/3.webp"></div>
+                    <img src="img/gallery/preview/3.webp" class="gallery__photo gallery__photo3 reveal" data-src="img/gallery/3.webp" loading="lazy" decoding="async">
                 </div>
     
                 <div class="gallery__wrap-photo">
-                    <div class="gallery__photo gallery__photo4" data-src="img/gallery/4.webp"></div>
+                    <img src="img/gallery/preview/4.webp" class="gallery__photo gallery__photo4 reveal" data-src="img/gallery/4.webp" loading="lazy" decoding="async">
                 </div>
     
                 <div class="gallery__wrap-photo">
-                    <div class="gallery__photo gallery__photo5" data-src="img/gallery/5.webp"></div>
+                    <img src="img/gallery/preview/5.webp" class="gallery__photo gallery__photo5 reveal" data-src="img/gallery/5.webp" loading="lazy" decoding="async">
                 </div>
     
                 <div class="gallery__wrap-photo">
-                    <div class="gallery__photo gallery__photo6" data-src="img/gallery/6.webp"></div>
+                    <img src="img/gallery/preview/6.webp" class="gallery__photo gallery__photo6 reveal" data-src="img/gallery/6.webp" loading="lazy" decoding="async">
                 </div>
     
                 <div class="gallery__wrap-photo">
-                    <div class="gallery__photo gallery__photo7" data-src="img/gallery/7.webp"></div>
+                    <img src="img/gallery/preview/7.webp" class="gallery__photo gallery__photo7 reveal" data-src="img/gallery/7.webp" loading="lazy" decoding="async">
                 </div>
     
                 <div class="gallery__wrap-photo">
-                    <div class="gallery__photo gallery__photo8" data-src="img/gallery/8.webp"></div>
+                    <img src="img/gallery/preview/8.webp" class="gallery__photo gallery__photo8 reveal" data-src="img/gallery/8.webp" loading="lazy" decoding="async">
                 </div>
     
                 <div class="gallery__wrap-photo">
-                    <div class="gallery__photo gallery__photo9" data-src="img/gallery/9.webp"></div>
+                    <img src="img/gallery/preview/9.webp" class="gallery__photo gallery__photo9 reveal" data-src="img/gallery/9.webp" loading="lazy" decoding="async">
                 </div>
             </div>
     
@@ -255,137 +255,10 @@
         <!-- /.container -->
     </footer>
 
-    <script>
-        window.addEventListener('DOMContentLoaded', function () {
-            // close / open FAQ
-            const containerQuestions = document.querySelector('.questions');
-
-            function closeAllQuestions() {
-                containerQuestions
-                    .querySelectorAll('.questions__body')
-                    .forEach(qBody => {
-                        qBody.style.cssText += 'height: ' 
-                            + qBody.querySelector('.questions__title').clientHeight
-                            + 'px;';
-
-                        qBody
-                            .querySelector('.questions__btn')
-                            .classList
-                            .remove('questions__btn_close');
-                    });
-            }
-
-            function transtionTo(elm, newH) {
-                if (!newH || newH === 0) {
-                    newH = 0;
-
-                    Array.prototype.forEach.call(elm.children, child => {
-                        if (child.tagName = 'DIV') newH += child.clientHeight;
-                    });
-                }
-
-                elm.style.cssText = 'height: ' + newH + 'px;';
-            }
-
-            containerQuestions.querySelectorAll('.questions__body').forEach(qBody => {
-                    qBody.querySelector('.questions__title').addEventListener('click', event => {
-                            let isOnlyClose = event
-                                .target
-                                .classList
-                                .contains('questions__btn_close');
-
-                            closeAllQuestions();
-
-                            if (isOnlyClose) return;
-
-                            qBody
-                                .querySelector('.questions__btn')
-                                .classList
-                                .add('questions__btn_close');
-
-                            transtionTo(qBody);
-                     });
-            });
-
-            closeAllQuestions();
-        });
-    </script>
+    <script src="js/faq.js"></script>
     
     <script src="js/main.js"></script>
 
-    <script>
-        const doc = document.querySelector('.document');
-        const photos = document.querySelectorAll('.gallery__photo');
-        const lightbox = document.querySelector('.modal');
-        const lightboxImg = document.querySelector('.lightbox__image');
-
-        const btnClose = document.querySelector('.modal__btn-close');
-        const btnNext = document.querySelector('.lightbox__arrow_right');
-        const btnPrev = document.querySelector('.lightbox__arrow_left');
-
-        let currentIndex = 0;
-        let images = [];
-
-        // собираем массив
-        photos.forEach((photo, index) => {
-        const src = photo.dataset.src;
-        images.push(src);
-
-        photo.addEventListener('click', () => {
-            currentIndex = index;
-            openLightbox();
-        });
-        });
-
-        function openLightbox() {
-            lightbox.classList.add('active');
-            doc.style.overflow = 'hidden';
-            btnClose.style.cssText = 'opacity: 1; pointer-events: all;';
-            lightbox.style.cssText = 'opacity: 1; pointer-events: all;';
-            lightboxImg.style.cssText = 'margin-top: 0;';
-            lightboxImg.src = images[currentIndex];
-        }
-
-        function closeLightbox() {
-            lightbox.classList.remove('active');
-            lightbox.style.cssText = '';
-            lightboxImg.style.cssText = '';
-            doc.style.overflow = '';
-            btnClose.style.cssText = '';
-        }
-
-        function nextImage() {
-        currentIndex = (currentIndex + 1) % images.length;
-        lightboxImg.src = images[currentIndex];
-        lightboxImg.classList.contains('next-img');
-        }
-
-        function prevImage() {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        lightboxImg.src = images[currentIndex];
-        }
-        
-
-        // события
-        btnClose.addEventListener('click', closeLightbox);
-        btnNext.addEventListener('click', nextImage);
-        btnPrev.addEventListener('click', prevImage);
-
-        // клик по фону
-        lightbox.addEventListener('click', (e) => {
-        if (e.target.classList.contains('modal')) {
-            closeLightbox();
-        }
-        });
-
-        // клавиатура
-        document.addEventListener('keydown', (e) => {
-        if (!lightbox.classList.contains('active')) return;
-
-        if (e.key === 'Escape') closeLightbox();
-        if (e.key === 'ArrowRight') nextImage();
-        if (e.key === 'ArrowLeft') prevImage();
-        });
-    </script>
+    <script src="js/gallery.js"></script>
 </body>
 </html>
