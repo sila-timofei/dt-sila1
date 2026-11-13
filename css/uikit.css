@@ -365,8 +365,8 @@ html {
 .legal-details {
 	font-family: 'Montserrat';
     width: calc(100% - 30px);
-    max-width: 820px;
-    margin: 30px 0;
+    max-width: 1170px;
+    margin: 30px auto;
     padding: 19px 4px 0;
     border-top: 1px solid #ededed;
     text-align: center;
