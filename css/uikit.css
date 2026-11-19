@@ -355,6 +355,7 @@ html {
 .footer__created {
     width: 237.88px;
     text-align: right;
+	font-size: 15px;
 }
 
 .footer__created > a {
