@@ -313,6 +313,10 @@ html {
     height: 29px;
 }
 
+.footer__copyter {
+    font-size: 15px;
+}
+
 .social {
     display: flex;
     align-items: center;
@@ -324,13 +328,17 @@ html {
 
 .social__link {
     text-decoration: none;
-    margin-right: 12px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-size: 14px;
 }
 
-.social__icon {
-    height: 20px;
-    opacity: 1;
-    transition: 0.3s;
+.social__link:hover {
+    color: #ED3551;
+    text-decoration: underline;
 }
 
 .social__link:last-child {
@@ -342,9 +350,7 @@ html {
     align-items: center;
 }
 
-.social__icon:hover {
-    opacity: 1;
-}
+
 
 .footer__created {
     width: 237.88px;
