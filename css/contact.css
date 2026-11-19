@@ -60,14 +60,6 @@
     margin-bottom: 14px;
 }
 
-.contact__social-item > i {
-    opacity: 1;
-}
-
-.contact__socila-telegram {
-    width: 15px;
-}
-
 .contact__social-item:last-child {
     margin-bottom:0;
 }
